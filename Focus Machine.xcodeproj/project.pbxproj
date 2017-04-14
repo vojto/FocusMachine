@@ -10,7 +10,35 @@
 		991D61791E743AD5006A2805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991D61781E743AD5006A2805 /* AppDelegate.swift */; };
 		991D617B1E743AD5006A2805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 991D617A1E743AD5006A2805 /* Assets.xcassets */; };
 		991D617E1E743AD5006A2805 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 991D617C1E743AD5006A2805 /* MainMenu.xib */; };
+		991D61871E744520006A2805 /* RequestWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991D61851E744520006A2805 /* RequestWindowController.swift */; };
+		991D61881E744520006A2805 /* RequestWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 991D61861E744520006A2805 /* RequestWindowController.xib */; };
+		99ED64831EA092650062DE54 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 99ED647C1EA0925F0062DE54 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		99ED64851EA092650062DE54 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 99ED647D1EA0925F0062DE54 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		99ED64871EA092650062DE54 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 99ED647E1EA0925F0062DE54 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		99ED64891EA0926A0062DE54 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99ED647C1EA0925F0062DE54 /* ReactiveCocoa.framework */; };
+		99ED648A1EA0926A0062DE54 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99ED647D1EA0925F0062DE54 /* ReactiveSwift.framework */; };
+		99ED648B1EA0926A0062DE54 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99ED647E1EA0925F0062DE54 /* Result.framework */; };
+		99ED648D1EA096210062DE54 /* SwiftyTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99ED648C1EA0961B0062DE54 /* SwiftyTimer.framework */; };
+		99ED648E1EA096210062DE54 /* SwiftyTimer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 99ED648C1EA0961B0062DE54 /* SwiftyTimer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		99ED64951EA09B070062DE54 /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99ED64941EA09B070062DE54 /* LaunchAtLoginController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99ED64881EA092650062DE54 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				99ED648E1EA096210062DE54 /* SwiftyTimer.framework in Embed Frameworks */,
+				99ED64871EA092650062DE54 /* Result.framework in Embed Frameworks */,
+				99ED64831EA092650062DE54 /* ReactiveCocoa.framework in Embed Frameworks */,
+				99ED64851EA092650062DE54 /* ReactiveSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		991D61751E743AD5006A2805 /* Focus Machine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Focus Machine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -18,6 +46,15 @@
 		991D617A1E743AD5006A2805 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		991D617D1E743AD5006A2805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		991D617F1E743AD5006A2805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		991D61851E744520006A2805 /* RequestWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestWindowController.swift; sourceTree = "<group>"; };
+		991D61861E744520006A2805 /* RequestWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestWindowController.xib; sourceTree = "<group>"; };
+		99ED647C1EA0925F0062DE54 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/Mac/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		99ED647D1EA0925F0062DE54 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/Mac/ReactiveSwift.framework; sourceTree = "<group>"; };
+		99ED647E1EA0925F0062DE54 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		99ED648C1EA0961B0062DE54 /* SwiftyTimer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyTimer.framework; path = Carthage/Build/Mac/SwiftyTimer.framework; sourceTree = "<group>"; };
+		99ED64921EA09B060062DE54 /* Focus Machine-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Focus Machine-Bridging-Header.h"; sourceTree = "<group>"; };
+		99ED64931EA09B070062DE54 /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAtLoginController.h; sourceTree = "<group>"; };
+		99ED64941EA09B070062DE54 /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAtLoginController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +62,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99ED648D1EA096210062DE54 /* SwiftyTimer.framework in Frameworks */,
+				99ED64891EA0926A0062DE54 /* ReactiveCocoa.framework in Frameworks */,
+				99ED648A1EA0926A0062DE54 /* ReactiveSwift.framework in Frameworks */,
+				99ED648B1EA0926A0062DE54 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +75,8 @@
 		991D616C1E743AD5006A2805 = {
 			isa = PBXGroup;
 			children = (
+				99ED64911EA09AFE0062DE54 /* Vendor */,
+				99ED647B1EA092550062DE54 /* Frameworks */,
 				991D61771E743AD5006A2805 /* Focus Machine */,
 				991D61761E743AD5006A2805 /* Products */,
 			);
@@ -51,11 +94,34 @@
 			isa = PBXGroup;
 			children = (
 				991D61781E743AD5006A2805 /* AppDelegate.swift */,
+				991D61851E744520006A2805 /* RequestWindowController.swift */,
+				991D61861E744520006A2805 /* RequestWindowController.xib */,
 				991D617A1E743AD5006A2805 /* Assets.xcassets */,
 				991D617C1E743AD5006A2805 /* MainMenu.xib */,
 				991D617F1E743AD5006A2805 /* Info.plist */,
 			);
 			path = "Focus Machine";
+			sourceTree = "<group>";
+		};
+		99ED647B1EA092550062DE54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99ED648C1EA0961B0062DE54 /* SwiftyTimer.framework */,
+				99ED647C1EA0925F0062DE54 /* ReactiveCocoa.framework */,
+				99ED647D1EA0925F0062DE54 /* ReactiveSwift.framework */,
+				99ED647E1EA0925F0062DE54 /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99ED64911EA09AFE0062DE54 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				99ED64931EA09B070062DE54 /* LaunchAtLoginController.h */,
+				99ED64941EA09B070062DE54 /* LaunchAtLoginController.m */,
+				99ED64921EA09B060062DE54 /* Focus Machine-Bridging-Header.h */,
+			);
+			name = Vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,6 +134,7 @@
 				991D61711E743AD5006A2805 /* Sources */,
 				991D61721E743AD5006A2805 /* Frameworks */,
 				991D61731E743AD5006A2805 /* Resources */,
+				99ED64881EA092650062DE54 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -90,6 +157,7 @@
 				TargetAttributes = {
 					991D61741E743AD5006A2805 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -118,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				991D617B1E743AD5006A2805 /* Assets.xcassets in Resources */,
+				991D61881E744520006A2805 /* RequestWindowController.xib in Resources */,
 				991D617E1E743AD5006A2805 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,7 +198,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99ED64951EA09B070062DE54 /* LaunchAtLoginController.m in Sources */,
 				991D61791E743AD5006A2805 /* AppDelegate.swift in Sources */,
+				991D61871E744520006A2805 /* RequestWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,11 +312,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = "Focus Machine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tech.median.Focus-Machine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Focus Machine-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -254,11 +332,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = "Focus Machine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tech.median.Focus-Machine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Focus Machine-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -282,6 +366,7 @@
 				991D61841E743AD5006A2805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,4 @@
+github "antitypical/Result" "3.2.1"
+github "radex/SwiftyTimer" "2.0.0"
+github "ReactiveCocoa/ReactiveSwift" "1.1.1"
+github "ReactiveCocoa/ReactiveCocoa" "5.0.3"
