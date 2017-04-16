@@ -99,6 +99,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         requestController!.window?.makeKeyAndOrderFront(self)
+        NSApp.activate(ignoringOtherApps: true)
     }
 
     var exception: (startedAt: Date, minutes: Int, timer: Timer)?
