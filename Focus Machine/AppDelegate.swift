@@ -273,11 +273,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             
             // SK
             "emefka.sk",
-            "demotivacia.com",
-            
-            // Chart
-            "slack.com",
-            "rinik.slack.com"
+            "demotivacia.com"
         ]
         
         var entries = [String]()
